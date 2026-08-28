@@ -25,14 +25,14 @@ This document curates official and open-source implementations of algorithms, ev
 
 ---
 
-### 4. ReCoLoRA: Recursive Low-Rank Adaptation
-* **Repository:** [continual-learning/recolora](https://github.com/continual-learning/recolora)
-* **What It Implements:** Recursive re-decomposition algorithms for Low-Rank Adaptation (LoRA) during continual fine-tuning.
-* **Relevance:** Mitigates catastrophic forgetting in parameter-efficient fine-tuning (PEFT) pipelines by re-decomposing weights into frozen residuals and principal components before stacking fresh adapters for new tasks.
+### 4. WildBench Evaluation Harness
+* **Repository:** [allenai/WildBench](https://github.com/allenai/WildBench)
+* **What It Implements:** Benchmark suite and evaluation runners for testing models against in-the-wild user interactions collected from real-world usage[cite: 1].
+* **Relevance:** Automates continuous capability testing and fine-grained pairwise scoring (WB-Reward, WB-Score) to detect alignment drift without risk of static benchmark contamination[cite: 1].
 
 ---
 
-### 5. TRansactional & Multimodal Topological Defense (TRIAD)
-* **Repository:** [safety-research/triad-anomaly-defense](https://github.com/safety-research/triad-anomaly-defense)
-* **What It Implements:** Continuous survival analysis and topological latent trajectory monitoring using Bayesian Hidden Markov Models (HMM) and regularized Mahalanobis distance metrics.
-* **Relevance:** Actively tracks semantic drift and calculates expected time-to-failure in long-horizon, multi-turn conversational systems before policy violations or exception chain collapse occur.
+### 5. IFEval (Instruction-Following Evaluation Framework)
+* **Repository:** [google-research/instruction_following_eval](https://github.com/google-research/google-research/tree/master/instruction_following_eval)
+* **What It Implements:** Ground-truth verifiers for testing strict formatting and lexical constraint adherence[cite: 1].
+* **Relevance:** Enables automated detection of syntactic drift, conversational bloat, and formatting failure modes caused by continuous safety and RLHF post-training[cite: 1].
